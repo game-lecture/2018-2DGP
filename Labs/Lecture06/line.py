@@ -62,7 +62,6 @@ def draw_line(p1, p2):
 
 prepare_turtle_canvas()
 
-
-
+# fill here
 
 turtle.done()
