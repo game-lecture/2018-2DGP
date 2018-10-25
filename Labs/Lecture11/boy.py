@@ -28,7 +28,7 @@ class IdleState:
             boy.velocity -= 1
         elif event == LEFT_UP:
             boy.velocity += 1
-        boy.timer = 1000
+        boy.timer = 300
 
     @staticmethod
     def exit(boy, event):
@@ -103,6 +103,7 @@ class Boy:
         self.dir = 1
         self.velocity = 0
         self.frame = 0
+        self.timer = 0
         self.event_que = []
         self.cur_state = IdleState
         self.cur_state.enter(self, None)
